@@ -40,7 +40,7 @@ class MicropostsController < ApplicationController
   # POST /microposts
   # POST /microposts.json
   def create
-    @micropost = Micropost.new(params[:micropost])
+    @micropost = Micropost.new(params[:micropost]) 
 
     respond_to do |format|
       if @micropost.save
